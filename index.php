@@ -4,18 +4,16 @@
 
     $password [] = '';
 
-    for ($i=0; $i<=$pwdVar; $i++){
-        $numero = rand(0,10);
+     for ($i=0; $i<$pwdVar; $i++){
+         $numero = rand(0,10);
 
-        $password[] = $numero;
-    };
-    
-        
-    
-    // creare una funzione che crei un numero casuale
-    // incorsporare la funzione in un for con lunghezza -> pwd
-    //pushamo ogni numero in un array
-    //mostriamo array in pagina 
+         $password[] = $numero;
+     };
+
+
+
+
+
 
 ?>
 
@@ -29,7 +27,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <form action="">
         <label for="pwd">Password:</label>
         <input type="password" id="pwd" name="pwd" placeholder="lunghezza della password">
@@ -39,9 +37,13 @@
     <h1><?php echo "la lunghezza della password è: $pwdVar"?></h1>
 
     <?php
-       var_dump($password) 
-    ?> 
+    //    var_dump($password[])
+    foreach ($password as $key => $value){
+        print_r($value) ;
+    }
+    ?>
     
+
 
 
 </body>
