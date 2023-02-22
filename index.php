@@ -10,7 +10,7 @@
 
     <form action="">
         <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd" placeholder="lunghezza della password">
+        <input type="number" id="pwd" name="pwd" placeholder="lunghezza della password">
         <button>Invia</button>
     </form>
 
